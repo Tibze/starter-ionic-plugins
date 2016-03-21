@@ -1,0 +1,36 @@
+<ion-view>
+    <ion-header-bar align-title="center" class="bar">
+    <button class="button button-icon icon ion-navicon" menu-toggle="left"></button>
+        <h1 class="title">Social</h1>
+    </ion-header-bar>
+
+    <ion-content class="padding">
+
+      <div class="list" ng-if="isReady">
+
+        <a class="item" href="#">
+          Facebook
+          <span class="item-note" ng-if="facebookShareAvailable">
+            <button class="button button-small icon ion-social-facebook" ng-click="shareFacebook()"></button>
+          </span>
+        </a>
+
+        <a class="item" href="#">
+          Twitter
+          <span class="item-note" ng-if="twitterShareAvailable">
+            <button class="button button-small icon ion-social-twitter" ng-click="shareTwitter()"></button>
+          </span>
+        </a>
+
+        <a class="item" href="#">
+          Email
+          <span class="item-note" ng-if="emailShareAvailable">
+            <button class="button button-small icon ion-android-mail" ng-click="shareEmail()"></button>
+          </span>
+        </a>                                                         
+
+      </div>                 
+
+    </ion-content>
+
+</ion-view>

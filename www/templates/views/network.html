@@ -1,0 +1,33 @@
+<ion-view>
+    <ion-header-bar align-title="center" class="bar">
+    <button class="button button-icon icon ion-navicon" menu-toggle="left"></button>
+        <h1 class="title">Network</h1>
+    </ion-header-bar>
+
+    <ion-content>
+
+    <div class="alert alert-network" ng-if="!$root.networkAvailable">
+      <div class="">Deconnecté</div>
+    </div>     
+
+      <div class="list">
+
+        <a class="item" href="#">
+          Network Available
+          <span class="item-note">
+            {{$root.networkAvailable}}
+          </span>
+        </a>
+
+        <a class="item" href="#">
+          Network Type
+          <span class="item-note">
+            {{$root.networkType}}
+          </span>
+        </a>                                                
+
+      </div>
+
+    </ion-content>   
+
+</ion-view>

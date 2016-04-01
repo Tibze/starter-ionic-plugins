@@ -1,4 +1,4 @@
-# starter webapp-es6
+# starter-ionic-plugins
 
 This is a full stack to start a mobile app with Ionic & ngCordova wrapper
 
